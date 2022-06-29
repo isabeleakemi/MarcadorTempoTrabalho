@@ -1,0 +1,18 @@
+﻿<Window x:Class="MarcadorTempoTrabalho.PesquisaMarcador"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MarcadorTempoTrabalho"
+        mc:Ignorable="d"
+        Title="Pesquisa Marcador" Height="302" Width="460" Background="Gray" WindowStartupLocation="CenterScreen" Icon="time.ico">
+    <Grid>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="271" VerticalAlignment="Top" Width="452" AutoGenerateColumns="False" IsReadOnly="True" MouseDoubleClick="dataGrid_MouseDoubleClick">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Código" Binding="{Binding id_marcador}"/>
+                <DataGridTextColumn Binding="{Binding descricao}" Header="Descrição" Width="350"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

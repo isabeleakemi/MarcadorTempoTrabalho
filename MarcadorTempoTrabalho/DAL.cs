@@ -13,7 +13,7 @@ namespace MarcadorTempoTrabalho
         static string serverName = "127.0.0.1";                                          //localhost
         static string port = "5432";                                                            //porta default
         static string userName = "postgres";                                               //nome do administrador
-        static string password = "1234";                                             //senha do administrador
+        static string password = "Z1e2s3r4g5t6o7s*";                                             //senha do administrador
         static string databaseName = "marcador_tempo";                                       //nome do banco de dados
         NpgsqlConnection pgsqlConnection = null;
         string connString = null;
